@@ -1,0 +1,103 @@
+<!--     <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+        <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+        <script src="./assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+        <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+        <script src="./assets/js/theme.min.js"></script>
+
+    </head>
+    <body>
+        <form name="form1" id="form1" method="post" action="../Controllers/ProductoController.php">
+            <ul>
+                <label form="destinationName">Buscar PAIS</label>
+                <input type="text" id="destinationName" name="destinationName">
+            </ul>
+
+            <ul>
+                <label form="startDate">fecha de vuelo</label>
+                <input type="date" id="startDate" name="startDate">
+            </ul>
+
+            <ul>
+                <select name = "Moneda">
+                    <option value ="AUD">Dolar Australiano</option>
+                    <option value ="BRL">Real Brasileño</option>
+                    <option value ="CAD">Dolar Canadiense</option>
+                    <option value ="CHF">Franco Suizo</option>
+                    <option value ="DKK">Corona Danesa</option>
+                    <option value ="EUR">Euro</option>
+                    <option value ="GBP">Libra Esterlina</option>
+                    <option value ="HKD">Dolar de Hong Kong</option>
+                    <option value ="INR">Rupia India</option>
+                    <option value ="JPY">Yen Japones</option>
+                    <option value ="NOK">Corona Noruega</option>
+                    <option value ="NZD">Dolar Neozelandes</option>
+                    <option value ="SEK">Corona Sueca</option>
+                    <option value ="SGD">Dolar de Singapur</option>
+                    <option value ="TWD">Nuevo Dolar Taiwanés</option>
+                    <option value ="USD">Dolar Estadounidense</option>
+                    <option value ="ZAR">Rand Sudafricano</option>
+                </select>
+            <ul>
+                <button type="submit" id="buttonAction">Siguiente</button>
+            </ul>
+        </form>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+
+<body>
+    <form action="Controllers/ProductoController.php" method="post">
+        <div>
+            <label for="destinationName">Buscar Pais:</label>
+            <input type="text" name="destinationName" id="destinationName">
+        </div>
+        <div>
+            <label for="startDate">Fecha de vuelo:</label>
+            <input type="date" name="startDate" id="startDate">
+        </div>
+        <div>
+            <select name = "moneda">
+                <option value ="AUD">Dolar Australiano</option>
+                <option value ="BRL">Real Brasileño</option>
+                <option value ="CAD">Dolar Canadiense</option>
+                <option value ="CHF">Franco Suizo</option>
+                <option value ="DKK">Corona Danesa</option>
+                <option value ="EUR">Euro</option>
+                <option value ="GBP">Libra Esterlina</option>
+                <option value ="HKD">Dolar de Hong Kong</option>
+                <option value ="INR">Rupia India</option>
+                <option value ="JPY">Yen Japones</option>
+                <option value ="NOK">Corona Noruega</option>
+                <option value ="NZD">Dolar Neozelandes</option>
+                <option value ="SEK">Corona Sueca</option>
+                <option value ="SGD">Dolar de Singapur</option>
+                <option value ="TWD">Nuevo Dolar Taiwanés</option>
+                <option value ="USD">Dolar Estadounidense</option>
+                <option value ="ZAR">Rand Sudafricano</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>
