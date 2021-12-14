@@ -52,10 +52,6 @@ $destinolimpio = "";
 $VarDestinos = array();
 for ($i = 0; $i < count($getCountryJson["data"]); $i++) {
 
-
-
-
-
     $datoslimpios2 = str_replace("ñ", "n", $getCountryJson["data"][$i]["destinationName"]);
     $datoslimpios4 = str_replace(" ", "", $datoslimpios2);
     $datoslimpios5 = str_replace(
