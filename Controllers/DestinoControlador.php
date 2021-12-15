@@ -84,8 +84,15 @@ for ($i = 0; $i < count($getCountryJson["data"]); $i++) {
 
 
     if (str_contains($getCountryJson["data"][$i]["destinationName"], "holanda")) {
-        $VarDestinos = $getCountryJson["data"][$i];
+        $getCountryJson["data"][$i]["destinationName"] = str_replace(
+            array('holandameridional','holandaseptentrional'),
+            array('holanda','holanda'),
 
+            $getCountryJson["data"][$i]["destinationName"]
+        );
+        
+        
+        // $VarDestinos = $getCountryJson["data"][$i]["destinationName"];
         // print_r($VarDestinos);
     }
 
@@ -93,6 +100,7 @@ for ($i = 0; $i < count($getCountryJson["data"]); $i++) {
         $destino = $getCountryJson["data"][$i]["destinationName"];
         $id_destino = $getCountryJson["data"][$i]["destinationId"];
         $destinolimpioId = $id_destino;
-    }
+    
+}
 }
 return $destinolimpioId;

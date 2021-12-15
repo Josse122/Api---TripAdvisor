@@ -141,7 +141,7 @@ for ($i = 0; $i < count($contProduct); $i++) {
 
     $templateCompleto = str_replace("[TABLE-PRODUCTO]", $datoConcatenado, $templateCompleto);
 
-    echo "<a href='../index.php'>Volver a buscar</a>".$templateCompleto;
+    echo "<a href='../index.php'><---Volver a buscar</a>".$templateCompleto;
 
     // print_r($datoConcatenado2);
     // echo($datoConcatenado);
